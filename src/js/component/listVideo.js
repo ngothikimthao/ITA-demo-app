@@ -81,11 +81,11 @@ const listItems = videos.map((video, index) =>
     <div key={index} >
         <VideoDisplay url={video.url}/>
         <div className='video-detail'>
-        <div className='detail'>
-            <p className='titleDevice'>{video.title}</p>
-            <p className='descriptionDevice'>{video.description}</p>
-        </div>
-        <button className='button text-button button-passed'>{video.status}</button>
+            <div className='detail'>
+                <p className='titleDevice'>{video.title}</p>
+                <p className='descriptionDevice'>{video.description}</p>
+            </div>
+            <button className='button text-button button-passed'>{video.status}</button>
         </div>
     </div>
 );   
@@ -93,6 +93,7 @@ const listItems = videos.map((video, index) =>
 const ListVideo =()=>(
     <div className="list-device">
         <div className='session-header-device'>
+
           <div classsName='device-type'>
             <h3 className='text-name-session'>Current Test Session</h3>
             <p className='p'>
@@ -108,6 +109,7 @@ const ListVideo =()=>(
               <span className='number-type-device'>8</span>
             </p>
           </div>
+
           <div className='status-session'>
             <div className='status-session'>
               <p className='cirle pass'></p>
@@ -119,9 +121,11 @@ const ListVideo =()=>(
             </div>
           </div>
         </div>
+
         <div className='session-body-device'>
           <div className="grid-container">{listItems}</div>
         </div>
+        
     </div>   
 )
     

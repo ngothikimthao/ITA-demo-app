@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../../media/logo.png'
-import avata from '../../media/avata.jpg'
+import logo from '../../img/logo.png'
+import avata from '../../img/avata.jpg'
 
 class Header extends React.Component{
     render(){
@@ -102,6 +102,7 @@ class Header extends React.Component{
                 </div>
 
                 <div className='nav-left'>
+
                     <a className='logo'><img src={logo} alt='Logo'></img></a>
                     <div className='devices-tab'>
                         <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
