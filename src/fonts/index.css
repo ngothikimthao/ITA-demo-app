@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./Poppins/Poppins-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+        url('./Poppins/Poppins-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./Poppins/Poppins-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('./Poppins/Poppins-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('./Poppins/Poppins-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: ProximaNovaReg;
+    font-style: normal;
+    font-weight: 500;
+    src:url('./ProximaNovaReg/FontsFree-Net-proxima_nova_reg-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+        url('./ProximaNovaReg/FontsFree-Net-proxima_nova_reg-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./ProximaNovaReg/ProximaNova-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('./ProximaNovaReg/ProximaNova-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('./ProximaNovaReg/ProximaNova-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+    font-family: Poppins;
+    font-family: ProximaNovaReg;
+}
