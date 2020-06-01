@@ -10,7 +10,7 @@ const HeaderWrapper = styled(Row)`
     align-items: center;
     padding: 0px 25px;
 `
-const NameWrapper = styled(Col)`
+const NameWrapper = styled.div`
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -20,7 +20,7 @@ const NameWrapper = styled(Col)`
     color: #24262B;    
     padding: 20px;  
 `
-const SearchBar = styled(Col)`
+const SearchBar = styled.div`
     display:flex;
     height: 42px;
     font-family: Poppins;
@@ -72,27 +72,43 @@ const LineViewType = styled.div`
     height: 44px;
     background-color: rgb(239, 239, 239);
 `
+const TopBarLeft = styled(Col)`
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+`
+const TopBarRight = styled(Col)`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
+`
 class TopBarWrapper extends React.Component{
     render(){
         return(
             <>
             <HeaderWrapper >
-                <NameWrapper md={2.5}>
-                    <p>Inteligent Test Automation</p>
-                </NameWrapper>
-                <SearchBar md={2.5}>
-                    <SearchIcon>
-                        <i className="fa fa-search" aria-hidden="true"></i>
-                    </SearchIcon>
-                    <SearchPlacehoder placeholder="Platform, Device Name, or UDID"></SearchPlacehoder>
-                </SearchBar>
+
+                <TopBarLeft md={5}>
+                    <NameWrapper> <p>Inteligent Test Automation</p></NameWrapper>
+                    <SearchBar >
+                        <SearchIcon>
+                            <i className="fa fa-search" aria-hidden="true"></i>
+                        </SearchIcon>
+                        <SearchPlacehoder placeholder="Platform, Device Name, or UDID"></SearchPlacehoder>
+                    </SearchBar>
+                </TopBarLeft>
+
                 <Col md={5}></Col>
-                <ChangeViewType md={2}>
-                    <ViewType>List View</ViewType>
-                    <LineViewType></LineViewType>
-                    <ViewType>Card View</ViewType>
-                </ChangeViewType>
+            
+                <TopBarRight md={2}>
+                    <ChangeViewType>
+                        <ViewType>List View</ViewType>
+                        <LineViewType></LineViewType>
+                        <ViewType>Card View</ViewType>
+                    </ChangeViewType>
+                </TopBarRight>
+
             </HeaderWrapper>
             </>
         )

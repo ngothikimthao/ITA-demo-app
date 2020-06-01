@@ -113,6 +113,7 @@ const DescriptionDevice = styled.p`
   line-height: 16px;
   letter-spacing: 0.1px;
   color: #969696;
+
 `
 const DisplayDetail = styled(Col)`
   display:flex;
@@ -144,13 +145,13 @@ const SessionHeaderDevice = styled(Row)`
   margin-left:0%;
   margin-right:0%; 
 `
-const DeviceType = styled(Col)`
+const DeviceType = styled.div`
   z-index: 0;
   width: auto;
   box-sizing: content-box;
   font-weight: 300;
 `
-const SessionName =  styled(Col)`
+const SessionName =  styled.div`
   display: inline-block;
   font-family: Poppins;
   font-style: normal;
@@ -159,19 +160,13 @@ const SessionName =  styled(Col)`
   line-height: 24px;
   letter-spacing: 0.01em;
   color: #24262B;
+  margin-right: 10px;
 `
 const AndroidIcon = styled.div`
     display:inline-block;
     margin-right: 10px;
     font-size: 22px;
     color: #BDC2D0;
-`
-const SessionStatus = styled(Col)`
-  display:inline-block;
-  display: flex;
-  align-items:center;
-  vertical-align: middle;
-  padding-top: 20px;
 `
 const CirlePass = styled.p`
   vertical-align: middle;
@@ -184,6 +179,7 @@ const CirlePass = styled.p`
   border-width: 1px;
   border-radius: 50%;  
   background: #6BC685;
+  margin-right: 5px;
 `
 const CirleIssue = styled.p`
   vertical-align: middle;
@@ -199,6 +195,8 @@ const CirleIssue = styled.p`
   border-width: 1px;
   border-radius: 50%;  
   background: #dc3545;
+  margin-right: 5px;
+
 `
 const TextStatus = styled.p`
   font-family: Poppins;
@@ -208,6 +206,7 @@ const TextStatus = styled.p`
   line-height: 16px;
   letter-spacing: 0.1px;
   color: #24262B;
+  margin-right: 10px;
 `
 const TextNumberDevice = styled.span`
   font-family: ProximaNovaReg;
@@ -224,7 +223,20 @@ const SessionBodyDevice = styled(Row)`
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
 `
-
+const SessionLeft = styled(Col)`
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  position: relative;
+`
+const SessionRight = styled(Col)`
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  align-items:center;
+  justify-content: flex-end;
+  margin-top: 15px;
+`
 const ButtonStatus = (props) => {
   if(props.status==='Passed')
     return <Button variant='success' size='sm'>{props.status}</Button>
@@ -259,26 +271,26 @@ class ListVideo extends React.Component{
         <ListDevice>
 
           <SessionHeaderDevice>
-            <SessionName md={2.5} >Current Test Session</SessionName>
-            <DeviceType md={2} >
-              <AndroidIcon>
-                <i class='fa fa-android' aria-hidden='true'></i>
-                <TextNumberDevice>8</TextNumberDevice>
-              </AndroidIcon>
-              <AndroidIcon>
-                <i class='fa fa-apple' aria-hidden='true'></i>
-                <TextNumberDevice>4</TextNumberDevice>
-              </AndroidIcon>
-            </DeviceType>
-            <Col md={5} ></Col>
-            <SessionStatus md={3.5} >
-              <Row>
-                <Col md={1}><CirlePass></CirlePass></Col>
-                <Col md={3}><TextStatus>Passed</TextStatus></Col>
-                <Col md={1}> <CirleIssue></CirleIssue></Col>
-                <Col md={5}> <TextStatus>Issue Detected</TextStatus></Col>
-              </Row>
-            </SessionStatus>
+            <SessionLeft md={4}>
+              <SessionName>Current Test Session</SessionName>
+              <DeviceType >
+                <AndroidIcon>
+                  <i class='fa fa-android' aria-hidden='true'></i>
+                  <TextNumberDevice>8</TextNumberDevice>
+                </AndroidIcon>
+                <AndroidIcon>
+                  <i class='fa fa-apple' aria-hidden='true'></i>
+                  <TextNumberDevice>4</TextNumberDevice>
+                </AndroidIcon>
+              </DeviceType>
+            </SessionLeft>
+            <Col md={5}></Col>
+            <SessionRight md={3}>
+              <CirlePass></CirlePass>
+              <TextStatus>Passed</TextStatus>
+              <CirleIssue></CirleIssue>
+              <TextStatus>Issue Detected</TextStatus>
+            </SessionRight>
           </SessionHeaderDevice>
 
           <SessionBodyDevice>{listItems}</SessionBodyDevice>
