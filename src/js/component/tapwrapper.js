@@ -28,7 +28,6 @@ const TabChoosed = styled.div`
     display: flex;
     color: rgb(141, 103, 251);
     height: calc(100% - 5px);
-    margin-right: 60px;
     font-family: Poppins;
     -webkit-box-align: center;
     align-items: center;
