@@ -29,6 +29,7 @@ const Avata = styled.img`
     position: absolute;
     width: 47.85px;
     height: 47.85px;
+    top: 23px;
 `
 const Username = styled.p`
     margin-left:25%;

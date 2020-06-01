@@ -6,8 +6,8 @@ const VideoDisplay = ({url}) => (
       className='react-player'    
       playing={true}
       url={url}
-      width='289px'
-      height='207px'
+      width='100%'
+      height='100%'
       playing  
     />
   )

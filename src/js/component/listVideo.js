@@ -141,7 +141,8 @@ const SessionHeaderDevice = styled(Row)`
   align-items: center;
   padding: 17px 40px;
   border-bottom: 1px solid rgb(239, 239, 239);
-  /* margin:0; */
+  margin-left:0%;
+  margin-right:0%; 
 `
 const DeviceType = styled(Col)`
   z-index: 0;
@@ -219,8 +220,6 @@ const TextNumberDevice = styled.span`
 const SessionBodyDevice = styled(Row)`
   height: auto;
   padding: 40px;
-`
-const DisplayGridVideo = styled.div`
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
@@ -260,8 +259,8 @@ class ListVideo extends React.Component{
         <ListDevice>
 
           <SessionHeaderDevice>
-            <SessionName md={2.5}>Current Test Session</SessionName>
-            <DeviceType md={2}>
+            <SessionName md={2.5} >Current Test Session</SessionName>
+            <DeviceType md={2} >
               <AndroidIcon>
                 <i class='fa fa-android' aria-hidden='true'></i>
                 <TextNumberDevice>8</TextNumberDevice>
@@ -271,8 +270,8 @@ class ListVideo extends React.Component{
                 <TextNumberDevice>4</TextNumberDevice>
               </AndroidIcon>
             </DeviceType>
-            <Col md={5}></Col>
-            <SessionStatus md={3}>
+            <Col md={5} ></Col>
+            <SessionStatus md={3.5} >
               <Row>
                 <Col md={1}><CirlePass></CirlePass></Col>
                 <Col md={3}><TextStatus>Passed</TextStatus></Col>
@@ -282,9 +281,7 @@ class ListVideo extends React.Component{
             </SessionStatus>
           </SessionHeaderDevice>
 
-          <SessionBodyDevice>
-            <DisplayGridVideo>{listItems}</DisplayGridVideo>
-          </SessionBodyDevice>
+          <SessionBodyDevice>{listItems}</SessionBodyDevice>
             
         </ListDevice>
       </Session>
