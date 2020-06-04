@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './fonts/index.css';
-import ListVideo from './js/component/listvideo';
+import ListVideo from './js/component/listVideo';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './js/layout/navbar'
 import SlideMenu from './js/layout/slide-menu'
