@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'; 
 import 'font-awesome/css/font-awesome.min.css';
-import VideoDisplay from './videoisplay'
+import VideoDisplay from './videoDisplay'
 import { Row, Col} from 'reactstrap';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
