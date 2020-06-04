@@ -9,76 +9,76 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const videos = [
     {
-      url:'/www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=xqYhnknfesQ&feature=youtu.be',
+      title: 'Xperia L1',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=rAhleRiu1Zs&feature=youtu.be',
+      title: 'Nokia 6',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=_XncuM4bu0s',
+      title: 'Galaxy J7 Pro',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
-      description: 'Android',
-      status:'Issue'
-    },
-    {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=JytxmrT_7-g',
+      title: 'Galaxy C5',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=RrdgHC0GThE',
+      title: 'Galaxy J7 Pro',
+      description: 'Android',
+      status:'Issued'
+    },
+    {
+      url:'https://www.youtube.com/watch?v=VG26hcLimRg',
+      title: 'Xperia XA Ultra',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=jGf8MoDMM3Q',
+      title: 'LG G6',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=RKilWO4Yy_A',
+      title: ' Galaxy J7',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=esZRw36452c',
+      title: 'Moto g',
       description: 'Android',
       status:'Passed'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=N-W2q-rlwfg',
+      title: 'Galaxy S6',
       description: 'Android',
-      status:'Passed'
+      status:'Issued'
     },
     {
       url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      title: 'galaxy j5 prime ',
       description: 'Android',
-      status:'Passed'
+      status:'Issued'
     },
     {
-      url:'https://www.youtube.com/watch?v=zPwAeSLLoqU',
-      title: 'Samsung 7',
+      url:'https://www.youtube.com/watch?v=9LYRy3PRquI',
+      title: 'Galaxy J5 Prime',
       description: 'Android',
-      status:'Passed'
+      status:'Issued'
     },
 ];
 
